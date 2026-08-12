@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shiva Outdoor Store</title>
+  <meta name="description" content="Shiva Outdoor Store - Sports, camping and outdoor equipment.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <span>🏕️</span>
+      Shiva Outdoor
+    </div>
+
+    <nav id="navbar">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button id="themeBtn" title="Dark mode">🌙</button>
+      <button id="cartBtn" class="cart-button">
+        🛒 <span id="cartCount">0</span>
+      </button>
+      <button id="menuBtn" class="menu-button">☰</button>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <div class="hero-content">
+      <span class="badge">WELCOME TO SHIVA OUTDOOR</span>
+
+      <h1>
+        Explore More.<br>
+        <span>Adventure More.</span>
+      </h1>
+
+      <p>
+        Quality sports, camping and outdoor equipment
+        for your next adventure.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products" class="primary-btn">Shop Products</a>
+        <a href="#about" class="secondary-btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-icon">🏕️</div>
+      <h3>Adventure Starts Here</h3>
+      <p>Gear up for your next journey.</p>
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="feature">
+      <span>⭐</span>
+      <div>
+        <h3>Quality Products</h3>
+        <p>Selected outdoor equipment</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <span>🚚</span>
+      <div>
+        <h3>Easy Ordering</h3>
+        <p>Simple inquiry process</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <span>📞</span>
+      <div>
+        <h3>Customer Support</h3>
+        <p>We're here to help</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products-section">
+
+    <div class="section-heading">
+      <span>OUR COLLECTION</span>
+      <h2>Popular Products</h2>
+      <p>Choose equipment for sports, camping and outdoor activities.</p>
+    </div>
+
+
+    <!-- SEARCH -->
+    <div class="shop-controls">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔎 Search products..."
+      >
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="camping">Camping</option>
+        <option value="sports">Sports</option>
+        <option value="accessories">Accessories</option>
+        <option value="clothing">Clothing</option>
+      </select>
+
+    </div>
+
+
+    <!-- PRODUCT GRID -->
+    <div id="productGrid" class="product-grid"></div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+
+    <div class="about-image">
+      🏔️
+    </div>
+
+    <div class="about-content">
+
+      <span>ABOUT THE STORE</span>
+
+      <h2>
+        Gear For Your
+        <strong>Next Adventure</strong>
+      </h2>
+
+      <p>
+        Shiva Outdoor is a modern outdoor and sports equipment
+        store owned by <strong>Shiva Meghwall</strong>.
+      </p>
+
+      <p>
+        We focus on useful and legal equipment for camping,
+        sports, travel and outdoor activities.
+      </p>
+
+      <div class="owner">
+        <div class="owner-avatar">SM</div>
+        <div>
+          <strong>Shiva Meghwall</strong>
+          <small>Owner & Founder</small>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+
+    <div class="section-heading">
+      <span>GET IN TOUCH</span>
+      <h2>Contact Us</h2>
+      <p>Have a question about a product? Send us an inquiry.</p>
+    </div>
+
+    <form id="contactForm">
+
+      <div class="form-row">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          required
+        >
+
+      </div>
+
+      <textarea
+        id="message"
+        placeholder="Your message..."
+        required
+      ></textarea>
+
+      <button type="submit" class="primary-btn">
+        Send Inquiry
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- CART SIDEBAR -->
+  <div id="cartOverlay" class="cart-overlay"></div>
+
+  <aside id="cartPanel" class="cart-panel">
+
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button id="orderBtn" class="primary-btn">
+        Send Order Inquiry
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+        <h2>🏕️ Shiva Outdoor</h2>
+        <p>
+          Sports • Camping • Outdoor Equipment
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>Owner</h3>
+        <p>Shiva Meghwall</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Shiva Outdoor. All Rights Reserved.
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
